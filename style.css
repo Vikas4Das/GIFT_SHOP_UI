@@ -129,8 +129,8 @@ header {
 .logo img {
     margin-top: 10px;
     display: flex;
-    height: 90px;
-    width: 100px;
+    height: 80px;
+    width: 90px;
 }
 
 
@@ -161,14 +161,25 @@ section {
     font-size: 30px;
     font-weight: 600;
 }
-.gift img{
+.gift img {
     display: flex;
     margin-top: -20px;
     margin-left: 10px;
     width: 450px;
     height: 388px;
-
+    max-width: 100%; 
+    height: auto; 
 }
+
+@media (max-width: 768px) { 
+    .gift img {
+        width: 250px; 
+        height: auto; 
+        margin-left: 5px; 
+        margin-top: -10px; 
+    }
+}
+
 .product-list {
     display: flex;
     flex-wrap: wrap;
